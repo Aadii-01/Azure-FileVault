@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = 'aadi123'
+app.secret_key = os.getenv("FLASK_SECRET_KEY") 
 
 
 # Get secrets from .env
@@ -43,4 +43,5 @@ def delete_file(filename):
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
+
