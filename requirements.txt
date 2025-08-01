@@ -62,7 +62,6 @@ PySocks==1.7.1
 python-dateutil==2.8.2
 python-dotenv==1.1.1
 pytz==2024.2
-pywin32==310
 requests==2.32.3
 ROPGadget==7.6
 rpyc==6.0.1
@@ -82,3 +81,4 @@ zstandard==0.23.0
 flask
 azure-storage-blob
 python-dotenv
+pywin32; sys_platform == 'win32'
